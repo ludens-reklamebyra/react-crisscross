@@ -6,7 +6,7 @@
     "noImplicitAny": true,
     "removeComments": true,
     "declaration": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "jsx": "react"
   },
   "include": ["./src/**/*.tsx", "./src/**/*.ts"],
