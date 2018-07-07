@@ -16,8 +16,7 @@
 ### Properties
 You have accesss to all the same properties as in flexbox.
 
-#### Container values
-
+#### Container properties
 | Property | Value | Description |
 | --- | --- | --- |
 | direction | `'row'` *(default)*, `'column'` | Same as the `flex-direction` property in flexbox. |
@@ -26,8 +25,7 @@ You have accesss to all the same properties as in flexbox.
 | wrap | `'nowrap'` *(default)*, `'wrap'`, `'wrap-reverse'` | Same as the `flex-wrap` property in flexbox. |
 | gap | number | Size of gap between each flex item. |
 
-#### Item values
-
+#### Item properties
 | Property | Value | Description |
 | --- | --- | --- |
 | flex | string *(eg. '1 0 auto')* | Same as the `flex` property in flexbox. |
