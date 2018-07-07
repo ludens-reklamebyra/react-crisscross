@@ -3,7 +3,7 @@
 <h1 align="center">React Womb :dizzy:</h1>
 <p align="center">A simple and flexible layout component for React based on CSS flexbox</p>
 
-<h2>Layout component</h2>
+## Layout component
 
 ```jsx
 <Layout container>
@@ -14,7 +14,7 @@
 ```
 
 ### Properties
-<p>You have accesss to all the same properties as in flexbox.</p>
+You have accesss to all the same properties as in flexbox.
 
 #### Container values
 
