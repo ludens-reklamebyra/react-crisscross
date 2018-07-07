@@ -38,33 +38,57 @@
       <td>wrap</td>
       <td>'nowrap' <i>(default)</i>, 'wrap', 'wrap-reverse'</td>
     </tr>
+    <tr>
+      <td>gap</td>
+      <td>number</td>
+    </tr>
+    <tr>
+      <td>xs</td>
+      <td>1-12</td>
+    </tr>
+    <tr>
+      <td>sm</td>
+      <td>1-12</td>
+    </tr>
+    <tr>
+      <td>md</td>
+      <td>1-12</td>
+    </tr>
+    <tr>
+      <td>lg</td>
+      <td>1-12</td>
+    </tr>
+    <tr>
+      <td>xl</td>
+      <td>1-12</td>
+    </tr>
   </tbody>
 </table>
-    
-    
-    direction?: 'row' | 'column';
-    justify?:
-    | 'flex-start'
-    | 'flex-end'
-    | 'center'
-    | 'space-between'
-    | 'space-around';
-  alignItems?: 'flex-start' | 'flex-end' | 'center' | 'baseline' | 'stretch';
-  wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
-  gap?: number;
-  item?: boolean;
-  xs?: IGrid;
-  sm?: IGrid;
-  md?: IGrid;
-  lg?: IGrid;
-  xl?: IGrid;
-  flex?: string;
-  grow?: number;
-  shrink?: number;
-  alignSelf?:
-    | 'auto'
-    | 'flex-start'
-    | 'flex-end'
-    | 'center'
-    | 'baseline'
-    | 'stretch';
+
+<h4>Item values</h4>
+<table>
+  <thead>
+    <tr>
+      <td><b>Property</b></td>
+      <td><b>Value</b></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>flex</td>
+      <td>string <i>(eg. '1 0 auto')</td>
+    </tr>
+    <tr>
+      <td>grow</td>
+      <td>number</td>
+    </tr>
+    <tr>
+      <td>shrink</td>
+      <td>number</td>
+    </tr>
+    <tr>
+      <td>alignSelf</td>
+      <td>'auto' <i>(default)</i>, 'flex-start', 'flex-end', 'center', 'baseline', 'stretch'</td>
+    </tr>
+  </tbody>
+</table>
