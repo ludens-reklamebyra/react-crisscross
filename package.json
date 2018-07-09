@@ -46,6 +46,5 @@
     "build": "yarn build:clean && tsc",
     "storybook": "start-storybook -p 9003",
     "test": "jest"
-  },
-  "dependencies": {}
+  }
 }
