@@ -1,3 +1,5 @@
+import { GridType } from './Interfaces';
+
 export const mediaQueries = {
   xsmall: 0,
   small: 600,
@@ -6,8 +8,8 @@ export const mediaQueries = {
   xlarge: 1920
 };
 
-export function gridCalc(size: number): number {
-  if (size === 0 || size > 12) {
+export function gridCalc(size: GridType): number {
+  if (size < 1 || size > 12) {
     throw new Error(
       `The grid size is a number between 1-12. You defined "${size}".`
     );
