@@ -1,9 +1,10 @@
+import * as React from 'react';
 import styled, { css } from 'styled-components';
-import MediaQueries from './MediaQueries';
-import { ILayout } from './Interfaces';
+import { mediaQueries, gridCalc } from './utils';
+import { LayoutInterface } from './Interfaces';
 
-const Layout = styled.div<ILayout>`
-  ${(props: ILayout) =>
+const Layout = styled.div<LayoutInterface>`
+  ${(props: LayoutInterface) =>
     props.container &&
     css`
       display: flex;
@@ -30,25 +31,25 @@ const Layout = styled.div<ILayout>`
               }
             `)};
     `};
-  ${props =>
+  ${(props: LayoutInterface) =>
     props.item &&
     css`
-      ${props.xs && `flex-basis: ${(props.xs / 12) * 100}%;`}
+      ${props.xs && `flex-basis: ${gridCalc(props.xs)}%;`}
       ${props.sm &&
-        `@media only screen and (min-width: ${MediaQueries.small}px) {
-          flex-basis:  ${(props.sm / 12) * 100}%;
+        `@media only screen and (min-width: ${mediaQueries.small}px) {
+          flex-basis:  ${gridCalc(props.sm)}%;
         }`}
       ${props.md &&
-        `@media only screen and (min-width: ${MediaQueries.medium}px) {
-          flex-basis:  ${(props.md / 12) * 100}%;
+        `@media only screen and (min-width: ${mediaQueries.medium}px) {
+          flex-basis:  ${gridCalc(props.md)}%;
         }`}
       ${props.lg &&
-        `@media only screen and (min-width: ${MediaQueries.large}px) {
-          flex-basis:  ${(props.lg / 12) * 100}%;
+        `@media only screen and (min-width: ${mediaQueries.large}px) {
+          flex-basis:  ${gridCalc(props.lg)}%;
         }`}
       ${props.xl &&
-        `@media only screen and (min-width: ${MediaQueries.xlarge}px) {
-          flex-basis:  ${(props.xl / 12) * 100}%;
+        `@media only screen and (min-width: ${mediaQueries.xlarge}px) {
+          flex-basis:  ${gridCalc(props.xl)}%;
         }`}
 
       ${props.flex &&

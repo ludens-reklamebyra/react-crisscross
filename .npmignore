@@ -2,3 +2,5 @@
 src
 stories
 *.log
+.DS_Store
+__tests__

@@ -1,8 +1,8 @@
-type IGrid = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+type GridType = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
-interface ILayout {
+interface LayoutInterface {
   container?: boolean;
-  direction?: 'row' | 'column' | 'row-reverse' | 'column-reverse';
+  direction?: 'row' | 'column' | 'row-reverse' | 'column-reverse';
   justify?:
     | 'flex-start'
     | 'flex-end'
@@ -13,11 +13,11 @@ interface ILayout {
   wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
   gap?: number;
   item?: boolean;
-  xs?: IGrid;
-  sm?: IGrid;
-  md?: IGrid;
-  lg?: IGrid;
-  xl?: IGrid;
+  xs?: GridType;
+  sm?: GridType;
+  md?: GridType;
+  lg?: GridType;
+  xl?: GridType;
   flex?: string;
   grow?: number;
   shrink?: number;
@@ -30,4 +30,4 @@ interface ILayout {
     | 'stretch';
 }
 
-export {IGrid, ILayout}
+export { GridType, LayoutInterface };
