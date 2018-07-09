@@ -1,7 +1,7 @@
 {
-  "name": "react-womb",
+  "name": "@ludens-reklame/react-crisscross",
   "version": "0.1.0",
-  "description": "A flexible layout component for React",
+  "description": "A flexible layout component for React based on CSS flexbox",
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",
   "license": "MIT",
