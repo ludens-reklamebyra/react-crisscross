@@ -19,7 +19,7 @@ You have accesss to all the same properties as in flexbox.
 #### Container properties
 | Property | Value | Description |
 | --- | --- | --- |
-| direction | `'row'` *(default)*, `'column'` | Same as the `flex-direction` property in flexbox. |
+| direction | `'row'` *(default)*, `'column'`, `'row-reverse'`, `'column-reverse'` | Same as the `flex-direction` property in flexbox. |
 | justify | `'flex-start'` *(default)*, `'flex-end'`, `'center'`, `'space-between'`, `'space-around'` | Same as the `justify-content` property in flexbox. |
 | alignItems | `'stretch'` *(default)*, `'flex-start'`, `'flex-end'`, `'center'`, `'baseline'` | Same as the `align-items` property in flexbox. |
 | wrap | `'nowrap'` *(default)*, `'wrap'`, `'wrap-reverse'` | Same as the `flex-wrap` property in flexbox. |
