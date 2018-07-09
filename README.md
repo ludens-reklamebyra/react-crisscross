@@ -1,6 +1,6 @@
 [![GitHub issues](https://img.shields.io/github/issues/ludens-reklamebyra/react-crisscross.svg)](https://github.com/ludens-reklamebyra/react-crisscross/issues) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-<h1 align="center">React crisscross :triangular_ruler:</h1>
+<h1 align="center">React Crisscross :triangular_ruler:</h1>
 <p align="center">A simple and flexible layout component for React based on CSS flexbox</p>
 
 ## Layout component
