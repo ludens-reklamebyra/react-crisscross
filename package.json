@@ -31,19 +31,23 @@
     "@types/storybook__react": "^3.0.7",
     "awesome-typescript-loader": "^5.2.0",
     "babel-core": "^6.26.3",
+    "husky": "^0.14.3",
     "jest": "^23.3.0",
+    "prettier": "^1.13.7",
+    "pretty-quick": "^1.6.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-test-renderer": "^16.4.1",
     "rimraf": "^2.6.2",
     "styled-components": "^3.3.3",
     "ts-jest": "^23.0.0",
-    "typescript": "^2.9.2",
-    "react-test-renderer": "^16.4.1"
+    "typescript": "^2.9.2"
   },
   "scripts": {
     "prepublish": "yarn build",
     "build:clean": "rimraf dist",
     "build": "yarn build:clean && tsc",
+    "precommit": "pretty-quick --staged && yarn build && yarn test",
     "storybook": "start-storybook -p 9003",
     "test": "jest"
   }
