@@ -1,5 +1,5 @@
 import Layout from './Layout';
-import { ILayout, IGrid } from './Interfaces';
+import { LayoutInterface, GridInterface } from './Interfaces';
 
 export default Layout;
-export { ILayout, IGrid };
+export { LayoutInterface, GridInterface };
