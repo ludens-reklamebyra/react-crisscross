@@ -1,6 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Layout renders the simplest example of the Layout 1`] = `
+exports[`Layout Simple two column layout 1`] = `
+<div
+  className="sc-bdVaJa cAlmdd"
+>
+  <div
+    className="sc-bdVaJa gTVLHs"
+  >
+    I'm positioned left
+  </div>
+  <div
+    className="sc-bdVaJa gTVLHs"
+  >
+    I'm positioned right
+  </div>
+</div>
+`;
+
+exports[`Layout Simplest example of the Layout 1`] = `
 <div
   className="sc-bdVaJa frwHkR"
 >
