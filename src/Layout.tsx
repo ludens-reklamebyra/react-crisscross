@@ -1,9 +1,10 @@
+import * as React from 'react';
 import styled, { css } from 'styled-components';
 import MediaQueries from './MediaQueries';
-import { ILayout } from './Interfaces';
+import { LayoutInterface } from './Interfaces';
 
-const Layout = styled.div<ILayout>`
-  ${(props: ILayout) =>
+const Layout = styled.div<LayoutInterface>`
+  ${(props: LayoutInterface) =>
     props.container &&
     css`
       display: flex;
@@ -30,7 +31,7 @@ const Layout = styled.div<ILayout>`
               }
             `)};
     `};
-  ${props =>
+  ${(props: LayoutInterface) =>
     props.item &&
     css`
       ${props.xs && `flex-basis: ${(props.xs / 12) * 100}%;`}
