@@ -7,7 +7,9 @@
 
 ```jsx
 <Layout container>
-  <Layout item>{/* Content */}</Layout>
+  <Layout item>
+    {/* Content */}
+  </Layout>
 </Layout>
 ```
 
