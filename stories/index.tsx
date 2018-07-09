@@ -4,9 +4,7 @@ import Layout from '../src/index';
 
 storiesOf('Layout', module).add('Basic usage', () => (
   <Layout container>
-    <Layout item>
-      Content here
-    </Layout>
+    <Layout item>Content here</Layout>
   </Layout>
 ));
 
