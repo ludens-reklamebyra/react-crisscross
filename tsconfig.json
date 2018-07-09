@@ -9,6 +9,6 @@
     "sourceMap": false,
     "jsx": "react"
   },
-  "include": ["./src/**/*.tsx", "./src/**/*.ts"],
+  "include": ["./src/**/*.tsx", "./src/**/*.ts", "./__tests__/**/*.tsx"],
   "exclude": ["node_modules"]
 }

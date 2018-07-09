@@ -2,7 +2,7 @@ type IGrid = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
 interface ILayout {
   container?: boolean;
-  direction?: 'row' | 'column' | 'row-reverse' | 'column-reverse';
+  direction?: 'row' | 'column' | 'row-reverse' | 'column-reverse';
   justify?:
     | 'flex-start'
     | 'flex-end'
@@ -30,4 +30,4 @@ interface ILayout {
     | 'stretch';
 }
 
-export {IGrid, ILayout}
+export { IGrid, ILayout };

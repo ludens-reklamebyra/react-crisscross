@@ -2,3 +2,4 @@
 src
 stories
 *.log
+__tests__

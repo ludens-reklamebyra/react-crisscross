@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders the simplest example of the Layout 1`] = `
+<div
+  className="sc-bdVaJa frwHkR"
+>
+  <div
+    className="sc-bdVaJa krxTdz"
+  >
+    hello world
+  </div>
+</div>
+`;
