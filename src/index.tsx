@@ -1,4 +1,5 @@
-import Layout, { LayoutProvider } from './Layout';
+import Layout from './Layout';
+import LayoutProvider from './LayoutProvider';
 import { LayoutInterface, GridType, SettingsInterface } from './interfaces';
 
 export default Layout;

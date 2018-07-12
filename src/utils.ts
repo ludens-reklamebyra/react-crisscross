@@ -1,4 +1,4 @@
-import { GridType } from './Interfaces';
+import { GridType, SettingsInterface } from './Interfaces';
 
 export function gridCalc(base: number, size: GridType): number {
   if (size < 1 || size > base) {
@@ -8,4 +8,26 @@ export function gridCalc(base: number, size: GridType): number {
   }
 
   return (size / base) * 100;
+}
+
+function isObject(item: object): boolean {
+  return item && typeof item === 'object' && !Array.isArray(item);
+}
+
+export function mergeDeep(
+  target: SettingsInterface,
+  source: SettingsInterface
+): SettingsInterface {
+  if (isObject(target) && isObject(source)) {
+    for (const key in source) {
+      if (isObject(source[key])) {
+        if (!target[key]) (<any>Object).assign(target, { [key]: {} });
+        mergeDeep(target[key], source[key]);
+      } else {
+        (<any>Object).assign(target, { [key]: source[key] });
+      }
+    }
+  }
+
+  return target;
 }

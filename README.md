@@ -1,6 +1,5 @@
-[![GitHub issues](https://img.shields.io/github/issues/ludens-reklamebyra/react-crisscross.svg)](https://github.com/ludens-reklamebyra/react-crisscross/issues) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) 
+[![GitHub issues](https://img.shields.io/github/issues/ludens-reklamebyra/react-crisscross.svg)](https://github.com/ludens-reklamebyra/react-crisscross/issues) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 [![GitHub license](https://img.shields.io/github/license/ludens-reklamebyra/react-crisscross.svg)](https://github.com/ludens-reklamebyra/react-crisscross/blob/master/LICENSE)
-
 
 <h1 align="center">React Crisscross :triangular_ruler:</h1>
 <p align="center">A simple and flexible layout component for React based on CSS flexbox</p>
@@ -9,10 +8,29 @@
 
 ```jsx
 <Layout container>
-  <Layout item>
-    {/* Content */}
-  </Layout>
+  <Layout item>{/* Content */}</Layout>
 </Layout>
+```
+
+## Layout Provider
+
+Sometimes you want to override the default settings for the layout, such as media queries. React Crisscross ships with a
+module that can help you inject custom settings. Here's an example:
+
+```jsx
+const mySettings = {
+  mediaQueries: {
+    large: 1500
+  }
+}
+
+<LayoutProvider settings={mySettings}>
+  <Layout container>
+    <Layout item>
+      {/* Content */}
+    </Layout>
+  </Layout>
+</LayoutProvider>
 ```
 
 ### Properties
