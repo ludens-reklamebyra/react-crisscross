@@ -1,5 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Layout Custom settings with layout provider 1`] = `
+<div
+  className="sc-bdVaJa cAlmdd"
+>
+  <div
+    className="sc-bdVaJa gTVLHs"
+  >
+    I'm positioned left
+  </div>
+  <div
+    className="sc-bdVaJa gTVLHs"
+  >
+    I'm positioned right
+  </div>
+</div>
+`;
+
 exports[`Layout Simple two column layout 1`] = `
 <div
   className="sc-bdVaJa cAlmdd"

@@ -1,4 +1,4 @@
-import { gridCalc } from '../src/utils';
+import { gridCalc, mergeDeep } from '../src/utils';
 
 describe('Utils', () => {
   test('gridCalc to calculate correct percentage based on given size', () => {
@@ -14,5 +14,37 @@ describe('Utils', () => {
     expect(() => {
       gridCalc(12, 0);
     }).toThrow();
+  });
+
+  test('mergeDeep to recursively merge objects', () => {
+    const defaults = {
+      mediaQueries: {
+        xsmall: 0,
+        small: 600,
+        medium: 960,
+        large: 1024,
+        xlarge: 1417
+      },
+      gridBase: 12
+    };
+
+    const custom = {
+      mediaQueries: {
+        large: 1000
+      },
+      gridBase: 16
+    };
+
+    const expected = {
+      mediaQueries: {
+        xsmall: 0,
+        small: 600,
+        medium: 960,
+        large: 1000,
+        xlarge: 1417
+      },
+      gridBase: 16
+    };
+    expect(mergeDeep(defaults, custom)).toEqual(expected);
   });
 });
