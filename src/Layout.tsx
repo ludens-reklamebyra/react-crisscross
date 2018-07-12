@@ -101,14 +101,14 @@ function Layout(props: LayoutInterface): any {
   return (
     <LayoutContext.Consumer>
       {(settings: SettingsInterface) => {
-        const together = {
+        const newSettings = {
           ...defaultSettings,
           ...settings
         };
 
-        console.log(together); // FUCK!!!
+        console.log(newSettings); // Not working. Settings overrides everything still.
 
-        return <StyledLayout settings={together} {...props} />;
+        return <StyledLayout settings={newSettings} {...props} />;
       }}
     </LayoutContext.Consumer>
   );
