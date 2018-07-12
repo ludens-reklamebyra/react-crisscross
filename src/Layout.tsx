@@ -1,9 +1,28 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import { mediaQueries, gridCalc } from './utils';
-import { LayoutInterface } from './Interfaces';
+import { gridCalc } from './utils';
+import { LayoutInterface, SettingsInterface } from './Interfaces';
+import defaultSettings from './defaultSettings';
 
-const Layout = styled.div<LayoutInterface>`
+const LayoutContext = React.createContext(defaultSettings);
+
+function LayoutProvider({
+  settings,
+  children
+}: {
+  settings: SettingsInterface;
+  children: JSX.Element;
+}): JSX.Element {
+  if (!settings) {
+    throw new Error(`The LayoutProvider is missing a 'settings'-prop.`);
+  }
+
+  return (
+    <LayoutContext.Provider value={settings}>{children}</LayoutContext.Provider>
+  );
+}
+
+const StyledLayout = styled.div<LayoutInterface>`
   ${(props: LayoutInterface) =>
     props.container &&
     css`
@@ -34,22 +53,31 @@ const Layout = styled.div<LayoutInterface>`
   ${(props: LayoutInterface) =>
     props.item &&
     css`
-      ${props.xs && `flex-basis: ${gridCalc(props.xs)}%;`}
+      ${props.xs &&
+        `flex-basis: ${gridCalc(props.settings.gridBase, props.xs)}%;`}
       ${props.sm &&
-        `@media only screen and (min-width: ${mediaQueries.small}px) {
-          flex-basis:  ${gridCalc(props.sm)}%;
+        `@media only screen and (min-width: ${
+          props.settings.mediaQueries.small
+        }px) {
+          flex-basis:  ${gridCalc(props.settings.gridBase, props.sm)}%;
         }`}
       ${props.md &&
-        `@media only screen and (min-width: ${mediaQueries.medium}px) {
-          flex-basis:  ${gridCalc(props.md)}%;
+        `@media only screen and (min-width: ${
+          props.settings.mediaQueries.medium
+        }px) {
+          flex-basis:  ${gridCalc(props.settings.gridBase, props.md)}%;
         }`}
       ${props.lg &&
-        `@media only screen and (min-width: ${mediaQueries.large}px) {
-          flex-basis:  ${gridCalc(props.lg)}%;
+        `@media only screen and (min-width: ${
+          props.settings.mediaQueries.large
+        }px) {
+          flex-basis:  ${gridCalc(props.settings.gridBase, props.lg)}%;
         }`}
       ${props.xl &&
-        `@media only screen and (min-width: ${mediaQueries.xlarge}px) {
-          flex-basis:  ${gridCalc(props.xl)}%;
+        `@media only screen and (min-width: ${
+          props.settings.mediaQueries.xlarge
+        }px) {
+          flex-basis:  ${gridCalc(props.settings.gridBase, props.xl)}%;
         }`}
 
       ${props.flex &&
@@ -69,4 +97,22 @@ const Layout = styled.div<LayoutInterface>`
     `};
 `;
 
+function Layout(props: LayoutInterface): any {
+  return (
+    <LayoutContext.Consumer>
+      {(settings: SettingsInterface) => {
+        const together = {
+          ...defaultSettings,
+          ...settings
+        };
+
+        console.log(together); // FUCK!!!
+
+        return <StyledLayout settings={together} {...props} />;
+      }}
+    </LayoutContext.Consumer>
+  );
+}
+
 export default Layout;
+export { LayoutProvider };

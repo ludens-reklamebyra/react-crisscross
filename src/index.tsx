@@ -1,5 +1,5 @@
-import Layout from './Layout';
-import { LayoutInterface, GridType } from './interfaces';
+import Layout, { LayoutProvider } from './Layout';
+import { LayoutInterface, GridType, SettingsInterface } from './interfaces';
 
 export default Layout;
-export { LayoutInterface, GridType };
+export { LayoutProvider, LayoutInterface, GridType, SettingsInterface };

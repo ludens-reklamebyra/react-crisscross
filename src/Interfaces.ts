@@ -1,5 +1,16 @@
 type GridType = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
+interface SettingsInterface {
+  mediaQueries?: {
+    xsmall?: number;
+    small?: number;
+    medium?: number;
+    large?: number;
+    xlarge?: number;
+  };
+  gridBase?: number;
+}
+
 interface LayoutInterface {
   container?: boolean;
   direction?: 'row' | 'column' | 'row-reverse' | 'column-reverse';
@@ -28,6 +39,7 @@ interface LayoutInterface {
     | 'center'
     | 'baseline'
     | 'stretch';
+  settings: SettingsInterface;
 }
 
-export { GridType, LayoutInterface };
+export { GridType, LayoutInterface, SettingsInterface };
