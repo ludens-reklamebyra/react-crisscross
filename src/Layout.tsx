@@ -5,7 +5,7 @@ import defaultSettings from './defaultSettings';
 import { LayoutInterface, SettingsInterface } from './Interfaces';
 import LayoutContext from './LayoutContext';
 
-function Layout(props: LayoutInterface): any {
+function Layout(props: LayoutInterface): JSX.Element | string | null {
   return (
     <LayoutContext.Consumer>
       {(settings: SettingsInterface) => {
