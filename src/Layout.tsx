@@ -2,7 +2,7 @@ import * as React from 'react';
 import StyledLayout from './StyledLayout';
 import { mergeDeep } from './utils';
 import defaultSettings from './defaultSettings';
-import { LayoutInterface, SettingsInterface } from './interfaces';
+import { LayoutInterface, SettingsInterface } from './Interfaces';
 import LayoutContext from './LayoutContext';
 
 function Layout(props: LayoutInterface): any {

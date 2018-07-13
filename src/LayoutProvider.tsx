@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SettingsInterface } from './interfaces';
+import { SettingsInterface } from './Interfaces';
 import LayoutContext from './LayoutContext';
 
 function LayoutProvider({

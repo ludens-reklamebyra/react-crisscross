@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { gridCalc } from './utils';
-import { LayoutInterface } from './interfaces';
+import { LayoutInterface } from './Interfaces';
 
 const StyledLayout = styled.div<LayoutInterface>`
   ${(props: LayoutInterface) =>
