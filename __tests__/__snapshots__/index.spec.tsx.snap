@@ -30,13 +30,32 @@ exports[`Layout Custom settings with layout provider 1`] = `
 }
 
 .c1 {
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
   box-sizing: border-box;
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
 }
 
-@media only screen and (min-width:1280px) {
+@media only screen and (min-width:480px) {
+  .c1 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+}
+
+@media only screen and (min-width:747px) {
+  .c1 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+}
+
+@media only screen and (min-width:960px) {
   .c1 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;

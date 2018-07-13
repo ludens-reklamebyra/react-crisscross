@@ -33,13 +33,22 @@ describe('Layout', () => {
   });
 
   test('Custom settings with layout provider', () => {
+    const settings = {
+      mediaQueries: {
+        xsmall: 20,
+        small: 480,
+        medium: 747,
+        large: 960
+      }
+    };
+
     const layout = (
-      <LayoutProvider settings={{ mediaQueries: { xsmall: 300 } }}>
+      <LayoutProvider settings={settings}>
         <Layout container gap={16}>
-          <Layout item lg={6}>
+          <Layout item xs={12} sm={6} md={6} lg={6}>
             I'm positioned left
           </Layout>
-          <Layout item lg={6}>
+          <Layout item xs={12} sm={6} md={6} lg={6}>
             I'm positioned right
           </Layout>
         </Layout>
