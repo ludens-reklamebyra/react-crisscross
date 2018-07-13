@@ -1,4 +1,4 @@
-import { GridType, SettingsInterface } from './Interfaces';
+import { GridType, SettingsInterface } from './interfaces';
 
 export function gridCalc(base: number, size: GridType): number {
   if (size < 1 || size > base) {

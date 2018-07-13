@@ -1,4 +1,4 @@
-import { SettingsInterface } from './Interfaces';
+import { SettingsInterface } from './interfaces';
 
 const defaultSettings: SettingsInterface = {
   mediaQueries: {
