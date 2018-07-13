@@ -1,16 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Layout Custom settings with layout provider 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.c0 > * {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+@media only screen and (min-width:1280px) {
+  .c1 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+}
+
 <div
-  className="sc-bdVaJa cAlmdd"
+  className="c0"
 >
   <div
-    className="sc-bdVaJa gTVLHs"
+    className="c1"
   >
     I'm positioned left
   </div>
   <div
-    className="sc-bdVaJa gTVLHs"
+    className="c1"
   >
     I'm positioned right
   </div>
@@ -18,16 +61,59 @@ exports[`Layout Custom settings with layout provider 1`] = `
 `;
 
 exports[`Layout Simple two column layout 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.c0 > * {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+@media only screen and (min-width:1280px) {
+  .c1 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+}
+
 <div
-  className="sc-bdVaJa cAlmdd"
+  className="c0"
 >
   <div
-    className="sc-bdVaJa gTVLHs"
+    className="c1"
   >
     I'm positioned left
   </div>
   <div
-    className="sc-bdVaJa gTVLHs"
+    className="c1"
   >
     I'm positioned right
   </div>
@@ -35,11 +121,39 @@ exports[`Layout Simple two column layout 1`] = `
 `;
 
 exports[`Layout Simplest example of the Layout 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.c1 {
+  box-sizing: border-box;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
 <div
-  className="sc-bdVaJa frwHkR"
+  className="c0"
 >
   <div
-    className="sc-bdVaJa krxTdz"
+    className="c1"
   >
     hello world
   </div>

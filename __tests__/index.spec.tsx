@@ -2,6 +2,8 @@ import * as React from 'react';
 import { create } from 'react-test-renderer';
 import Layout, { LayoutProvider } from '../src/index';
 
+import 'jest-styled-components';
+
 describe('Layout', () => {
   test('Simplest example of the Layout', () => {
     const layout = (
