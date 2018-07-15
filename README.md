@@ -64,9 +64,9 @@ const mySettings = {
 </LayoutProvider>
 ```
 
-#### Settings
+#### Default settings
 
-These are the default settings used for Layout, that can be overwritten by the Provider.
+These settings can be overwritten by the `LayoutProvider`.
 
 ```js
 const settings = {
