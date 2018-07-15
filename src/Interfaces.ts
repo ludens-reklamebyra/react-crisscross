@@ -8,7 +8,7 @@ interface SettingsInterface {
     large?: number;
     xlarge?: number;
   };
-  gridBase?: number;
+  columns?: number;
 }
 
 interface LayoutInterface {

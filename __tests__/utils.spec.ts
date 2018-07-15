@@ -25,14 +25,14 @@ describe('Utils', () => {
         large: 1024,
         xlarge: 1417
       },
-      gridBase: 12
+      columns: 12
     };
 
     const custom = {
       mediaQueries: {
         large: 1000
       },
-      gridBase: 16
+      columns: 16
     };
 
     const expected = {
@@ -43,7 +43,7 @@ describe('Utils', () => {
         large: 1000,
         xlarge: 1417
       },
-      gridBase: 16
+      columns: 16
     };
     expect(mergeDeep(defaults, custom)).toEqual(expected);
   });
