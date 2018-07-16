@@ -13,27 +13,6 @@
 </Layout>
 ```
 
-## Layout Provider
-
-Sometimes you want to override the default settings for the layout, such as media queries. React Crisscross ships with a
-module that can help you inject custom settings. Here's an example:
-
-```jsx
-const mySettings = {
-  mediaQueries: {
-    large: 1500
-  }
-}
-
-<LayoutProvider settings={mySettings}>
-  <Layout container>
-    <Layout item>
-      {/* Content */}
-    </Layout>
-  </Layout>
-</LayoutProvider>
-```
-
 ### Properties
 
 You have accesss to all the same properties as in flexbox.
@@ -61,3 +40,43 @@ You have accesss to all the same properties as in flexbox.
 | md        | 1-12                                                                                      | Sets the `flex-basis` propery on the `md` media query. |
 | lg        | 1-12                                                                                      | Sets the `flex-basis` propery on the `lg` media query. |
 | xl        | 1-12                                                                                      | Sets the `flex-basis` propery on the `xl` media query. |
+
+---
+
+## Layout Provider
+
+Sometimes you want to override the default settings for the layout, such as media queries. React Crisscross ships with a
+module that can help you inject custom settings. Here's an example:
+
+```jsx
+const mySettings = {
+  mediaQueries: {
+    large: 1500
+  }
+}
+
+<LayoutProvider settings={mySettings}>
+  <Layout container>
+    <Layout item>
+      {/* Content */}
+    </Layout>
+  </Layout>
+</LayoutProvider>
+```
+
+#### Default settings
+
+These settings can be overwritten by the `LayoutProvider`.
+
+```js
+const settings = {
+  mediaQueries: {
+    xsmall: 0,
+    small: 600,
+    medium: 960,
+    large: 1280,
+    xlarge: 1920
+  },
+  columns: 12
+};
+```

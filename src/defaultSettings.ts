@@ -8,7 +8,7 @@ const defaultSettings: SettingsInterface = {
     large: 1280,
     xlarge: 1920
   },
-  gridBase: 12
+  columns: 12
 };
 
 export default defaultSettings;

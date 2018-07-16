@@ -35,30 +35,30 @@ const StyledLayout = styled.div<LayoutInterface>`
     props.item &&
     css`
       ${props.xs &&
-        `flex-basis: ${gridCalc(props.settings.gridBase, props.xs)}%;`}
+        `flex-basis: ${gridCalc(props.settings.columns, props.xs)}%;`}
       ${props.sm &&
         `@media only screen and (min-width: ${
           props.settings.mediaQueries.small
         }px) {
-          flex-basis:  ${gridCalc(props.settings.gridBase, props.sm)}%;
+          flex-basis:  ${gridCalc(props.settings.columns, props.sm)}%;
         }`}
       ${props.md &&
         `@media only screen and (min-width: ${
           props.settings.mediaQueries.medium
         }px) {
-          flex-basis:  ${gridCalc(props.settings.gridBase, props.md)}%;
+          flex-basis:  ${gridCalc(props.settings.columns, props.md)}%;
         }`}
       ${props.lg &&
         `@media only screen and (min-width: ${
           props.settings.mediaQueries.large
         }px) {
-          flex-basis:  ${gridCalc(props.settings.gridBase, props.lg)}%;
+          flex-basis:  ${gridCalc(props.settings.columns, props.lg)}%;
         }`}
       ${props.xl &&
         `@media only screen and (min-width: ${
           props.settings.mediaQueries.xlarge
         }px) {
-          flex-basis:  ${gridCalc(props.settings.gridBase, props.xl)}%;
+          flex-basis:  ${gridCalc(props.settings.columns, props.xl)}%;
         }`}
 
       ${props.flex &&
