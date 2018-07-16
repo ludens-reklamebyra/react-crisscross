@@ -218,7 +218,7 @@ const StyledLayout = styled.div<LayoutInterface>`
             `}
           ${props.xs.basis &&
             css`
-              flex-basis: ${gridCalc(props.settings.gridBase, props.xs.basis)}%;
+              flex-basis: ${gridCalc(props.settings.columns, props.xs.basis)}%;
             `}
           ${props.xs.grow &&
             css`
@@ -247,7 +247,7 @@ const StyledLayout = styled.div<LayoutInterface>`
             `}
           ${props.sm.basis &&
             css`
-              flex-basis: ${gridCalc(props.settings.gridBase, props.sm.basis)}%;
+              flex-basis: ${gridCalc(props.settings.columns, props.sm.basis)}%;
             `}
           ${props.sm.grow &&
             css`
@@ -276,7 +276,7 @@ const StyledLayout = styled.div<LayoutInterface>`
             `}
           ${props.md.basis &&
             css`
-              flex-basis: ${gridCalc(props.settings.gridBase, props.md.basis)}%;
+              flex-basis: ${gridCalc(props.settings.columns, props.md.basis)}%;
             `}
           ${props.md.grow &&
             css`
@@ -305,7 +305,7 @@ const StyledLayout = styled.div<LayoutInterface>`
             `}
           ${props.lg.basis &&
             css`
-              flex-basis: ${gridCalc(props.settings.gridBase, props.lg.basis)}%;
+              flex-basis: ${gridCalc(props.settings.columns, props.lg.basis)}%;
             `}
           ${props.lg.grow &&
             css`
@@ -334,7 +334,7 @@ const StyledLayout = styled.div<LayoutInterface>`
             `}
           ${props.xl.basis &&
             css`
-              flex-basis: ${gridCalc(props.settings.gridBase, props.xl.basis)}%;
+              flex-basis: ${gridCalc(props.settings.columns, props.xl.basis)}%;
             `}
           ${props.xl.grow &&
             css`
