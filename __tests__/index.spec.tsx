@@ -18,11 +18,11 @@ describe('Layout', () => {
 
   test('Simple two column layout', () => {
     const layout = (
-      <Layout container gap={16}>
-        <Layout item lg={6}>
+      <Layout container xs={{ gap: 16 }}>
+        <Layout item lg={{ basis: 6 }}>
           I'm positioned left
         </Layout>
-        <Layout item lg={6}>
+        <Layout item lg={{ basis: 6 }}>
           I'm positioned right
         </Layout>
       </Layout>
@@ -44,11 +44,23 @@ describe('Layout', () => {
 
     const layout = (
       <LayoutProvider settings={settings}>
-        <Layout container gap={16}>
-          <Layout item xs={12} sm={6} md={6} lg={6}>
+        <Layout container xs={{ gap: 16 }}>
+          <Layout
+            item
+            xs={{ basis: 12 }}
+            sm={{ basis: 6 }}
+            md={{ basis: 6 }}
+            lg={{ basis: 6 }}
+          >
             I'm positioned left
           </Layout>
-          <Layout item xs={12} sm={6} md={6} lg={6}>
+          <Layout
+            item
+            xs={{ basis: 12 }}
+            sm={{ basis: 6 }}
+            md={{ basis: 6 }}
+            lg={{ basis: 6 }}
+          >
             I'm positioned right
           </Layout>
         </Layout>
