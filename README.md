@@ -29,17 +29,17 @@ You have accesss to all the same properties as in flexbox.
 
 #### Item properties
 
-| Property  | Value                                                                                     | Description                                                 |
-| --------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| flex      | string _(eg. '1 0 auto')_                                                                 | Same as the `flex` property in flexbox.                     |
-| grow      | number                                                                                    | Same as the `flex-grow` property in flexbox.                |
-| shrink    | number                                                                                    | Same as the `flex-shrink` property in flexbox.              |
-| alignSelf | `'auto'` _(default)_, `'flex-start'`, `'flex-end'`, `'center'`, `'baseline'`, `'stretch'` | Same as the `flex-grow` property in flexbox.                |
-| xs        | object                                                                                    | All item properties available. Uses on the `xs` media query |
-| sm        | object                                                                                    | All item properties available. Uses on the `sm` media query |
-| md        | object                                                                                    | All item properties available. Uses on the `md` media query |
-| lg        | object                                                                                    | All item properties available. Uses on the `lg` media query |
-| xl        | object                                                                                    | All item properties available. Uses on the `xl` media query |
+| Property  | Value                                                                                     | Description                                                               |
+| --------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| flex      | string _(eg. '1 0 auto')_                                                                 | Same as the `flex` property in flexbox.                                   |
+| grow      | number                                                                                    | Same as the `flex-grow` property in flexbox.                              |
+| shrink    | number                                                                                    | Same as the `flex-shrink` property in flexbox.                            |
+| alignSelf | `'auto'` _(default)_, `'flex-start'`, `'flex-end'`, `'center'`, `'baseline'`, `'stretch'` | Same as the `flex-grow` property in flexbox.                              |
+| xs        | object                                                                                    | All container and item properties available. Uses on the `xs` media query |
+| sm        | object                                                                                    | All container and item properties available. Uses on the `sm` media query |
+| md        | object                                                                                    | All container and item properties available. Uses on the `md` media query |
+| lg        | object                                                                                    | All container and item properties available. Uses on the `lg` media query |
+| xl        | object                                                                                    | All container and item properties available. Uses on the `xl` media query |
 
 ---
 
