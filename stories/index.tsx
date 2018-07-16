@@ -25,8 +25,8 @@ storiesOf('Layout', module).add('Item sizes', () => (
 storiesOf('Layout', module).add('With custom settings', () => {
   const settings = {
     mediaQueries: {
-      xsmall: 50,
-      small: 300
+      xs: 50,
+      sm: 300
     }
   };
 

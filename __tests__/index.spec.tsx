@@ -35,10 +35,10 @@ describe('Layout', () => {
   test('Custom settings with layout provider', () => {
     const settings = {
       mediaQueries: {
-        xsmall: 20,
-        small: 480,
-        medium: 747,
-        large: 960
+        xs: 20,
+        sm: 480,
+        md: 747,
+        lg: 960
       }
     };
 

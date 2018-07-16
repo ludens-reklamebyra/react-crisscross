@@ -51,7 +51,7 @@ module that can help you inject custom settings. Here's an example:
 ```jsx
 const mySettings = {
   mediaQueries: {
-    large: 1500
+    lg: 1500
   }
 }
 
@@ -71,11 +71,11 @@ These settings can be overwritten by the `LayoutProvider`.
 ```js
 const settings = {
   mediaQueries: {
-    xsmall: 0,
-    small: 600,
-    medium: 960,
-    large: 1280,
-    xlarge: 1920
+    xs: 0,
+    sm: 600,
+    md: 960,
+    lg: 1280,
+    xlg: 1920
   },
   columns: 12
 };
