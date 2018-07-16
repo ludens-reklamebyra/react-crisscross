@@ -23,7 +23,7 @@ describe('Utils', () => {
         sm: 600,
         md: 960,
         lg: 1024,
-        xlg: 1417
+        xl: 1417
       },
       columns: 12
     };
@@ -41,7 +41,7 @@ describe('Utils', () => {
         sm: 600,
         md: 960,
         lg: 1000,
-        xlg: 1417
+        xl: 1417
       },
       columns: 16
     };

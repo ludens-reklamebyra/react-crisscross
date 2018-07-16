@@ -40,7 +40,7 @@ interface SettingsInterface {
     sm?: number;
     md?: number;
     lg?: number;
-    xlg?: number;
+    xl?: number;
   };
   columns?: number;
 }

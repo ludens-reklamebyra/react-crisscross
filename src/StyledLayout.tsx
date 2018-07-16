@@ -167,7 +167,7 @@ const StyledLayout = styled.div<LayoutInterface>`
         }`}
       ${props.xl &&
         css`@media only screen and (min-width: ${
-          props.settings.mediaQueries.xlg
+          props.settings.mediaQueries.xl
         }px) {
           ${props.xl.direction &&
             css`
@@ -326,7 +326,7 @@ const StyledLayout = styled.div<LayoutInterface>`
         }`}
       ${props.xl &&
         css`@media only screen and (min-width: ${
-          props.settings.mediaQueries.xlg
+          props.settings.mediaQueries.xl
         }px) {
           ${props.xl.flex &&
             css`

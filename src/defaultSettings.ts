@@ -6,7 +6,7 @@ const defaultSettings: SettingsInterface = {
     sm: 600,
     md: 960,
     lg: 1280,
-    xlg: 1920
+    xl: 1920
   },
   columns: 12
 };
