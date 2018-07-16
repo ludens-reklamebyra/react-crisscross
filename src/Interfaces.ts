@@ -36,11 +36,11 @@ type GridType = {
 
 interface SettingsInterface {
   mediaQueries?: {
-    xsmall?: number;
-    small?: number;
-    medium?: number;
-    large?: number;
-    xlarge?: number;
+    xs?: number;
+    sm?: number;
+    md?: number;
+    lg?: number;
+    xlg?: number;
   };
   columns?: number;
 }

@@ -11,7 +11,7 @@ const StyledLayout = styled.div<LayoutInterface>`
       display: flex;
       ${props.xs &&
         css`@media only screen and (min-width: ${
-          props.settings.mediaQueries.xsmall
+          props.settings.mediaQueries.xs
         }px) {
           ${props.xs.direction &&
             css`
@@ -50,7 +50,7 @@ const StyledLayout = styled.div<LayoutInterface>`
         }`}
       ${props.sm &&
         css`@media only screen and (min-width: ${
-          props.settings.mediaQueries.small
+          props.settings.mediaQueries.sm
         }px) {
           ${props.sm.direction &&
             css`
@@ -89,7 +89,7 @@ const StyledLayout = styled.div<LayoutInterface>`
         }`}
       ${props.md &&
         css`@media only screen and (min-width: ${
-          props.settings.mediaQueries.medium
+          props.settings.mediaQueries.md
         }px) {
           ${props.md.direction &&
             css`
@@ -128,7 +128,7 @@ const StyledLayout = styled.div<LayoutInterface>`
         }`}
       ${props.lg &&
         css`@media only screen and (min-width: ${
-          props.settings.mediaQueries.large
+          props.settings.mediaQueries.lg
         }px) {
           ${props.lg.direction &&
             css`
@@ -167,7 +167,7 @@ const StyledLayout = styled.div<LayoutInterface>`
         }`}
       ${props.xl &&
         css`@media only screen and (min-width: ${
-          props.settings.mediaQueries.xlarge
+          props.settings.mediaQueries.xlg
         }px) {
           ${props.xl.direction &&
             css`
@@ -210,7 +210,7 @@ const StyledLayout = styled.div<LayoutInterface>`
     css`
       ${props.xs &&
         css`@media only screen and (min-width: ${
-          props.settings.mediaQueries.xsmall
+          props.settings.mediaQueries.xs
         }px) {
           ${props.xs.flex &&
             css`
@@ -239,7 +239,7 @@ const StyledLayout = styled.div<LayoutInterface>`
         }`}
       ${props.sm &&
         css`@media only screen and (min-width: ${
-          props.settings.mediaQueries.small
+          props.settings.mediaQueries.sm
         }px) {
           ${props.sm.flex &&
             css`
@@ -268,7 +268,7 @@ const StyledLayout = styled.div<LayoutInterface>`
         }`}
       ${props.md &&
         css`@media only screen and (min-width: ${
-          props.settings.mediaQueries.medium
+          props.settings.mediaQueries.md
         }px) {
           ${props.md.flex &&
             css`
@@ -297,7 +297,7 @@ const StyledLayout = styled.div<LayoutInterface>`
         }`}
       ${props.lg &&
         css`@media only screen and (min-width: ${
-          props.settings.mediaQueries.large
+          props.settings.mediaQueries.lg
         }px) {
           ${props.lg.flex &&
             css`
@@ -326,7 +326,7 @@ const StyledLayout = styled.div<LayoutInterface>`
         }`}
       ${props.xl &&
         css`@media only screen and (min-width: ${
-          props.settings.mediaQueries.xlarge
+          props.settings.mediaQueries.xlg
         }px) {
           ${props.xl.flex &&
             css`

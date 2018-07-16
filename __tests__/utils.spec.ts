@@ -19,29 +19,29 @@ describe('Utils', () => {
   test('mergeDeep to recursively merge objects', () => {
     const defaults = {
       mediaQueries: {
-        xsmall: 0,
-        small: 600,
-        medium: 960,
-        large: 1024,
-        xlarge: 1417
+        xs: 0,
+        sm: 600,
+        md: 960,
+        lg: 1024,
+        xlg: 1417
       },
       columns: 12
     };
 
     const custom = {
       mediaQueries: {
-        large: 1000
+        lg: 1000
       },
       columns: 16
     };
 
     const expected = {
       mediaQueries: {
-        xsmall: 0,
-        small: 600,
-        medium: 960,
-        large: 1000,
-        xlarge: 1417
+        xs: 0,
+        sm: 600,
+        md: 960,
+        lg: 1000,
+        xlg: 1417
       },
       columns: 16
     };

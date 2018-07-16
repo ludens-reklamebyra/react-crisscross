@@ -2,11 +2,11 @@ import { SettingsInterface } from './Interfaces';
 
 const defaultSettings: SettingsInterface = {
   mediaQueries: {
-    xsmall: 0,
-    small: 600,
-    medium: 960,
-    large: 1280,
-    xlarge: 1920
+    xs: 0,
+    sm: 600,
+    md: 960,
+    lg: 1280,
+    xlg: 1920
   },
   columns: 12
 };
