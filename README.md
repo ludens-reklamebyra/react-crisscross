@@ -15,6 +15,8 @@
 
 `npm install react-crisscross`
 
+---
+
 ## Layout component
 
 ```jsx
