@@ -31,6 +31,7 @@ type GridType = {
   grow?: number;
   shrink?: number;
   alignSelf?: AlignSelfType;
+  order?: number;
 };
 
 interface SettingsInterface {

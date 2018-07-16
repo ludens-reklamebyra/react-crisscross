@@ -232,6 +232,10 @@ const StyledLayout = styled.div<LayoutInterface>`
             css`
               align-self: ${props.xs.alignSelf};
             `}
+          ${props.xs.order &&
+            css`
+              order: ${props.xs.order};
+            `}
         }`}
       ${props.sm &&
         css`@media only screen and (min-width: ${
@@ -256,6 +260,10 @@ const StyledLayout = styled.div<LayoutInterface>`
           ${props.sm.alignSelf &&
             css`
               align-self: ${props.sm.alignSelf};
+            `}
+          ${props.sm.order &&
+            css`
+              order: ${props.sm.order};
             `}
         }`}
       ${props.md &&
@@ -282,6 +290,10 @@ const StyledLayout = styled.div<LayoutInterface>`
             css`
               align-self: ${props.md.alignSelf};
             `}
+          ${props.md.order &&
+            css`
+              order: ${props.md.order};
+            `}
         }`}
       ${props.lg &&
         css`@media only screen and (min-width: ${
@@ -307,6 +319,10 @@ const StyledLayout = styled.div<LayoutInterface>`
             css`
               align-self: ${props.lg.alignSelf};
             `}
+          ${props.lg.order &&
+            css`
+              order: ${props.lg.order};
+            `}
         }`}
       ${props.xl &&
         css`@media only screen and (min-width: ${
@@ -331,6 +347,10 @@ const StyledLayout = styled.div<LayoutInterface>`
           ${props.xl.alignSelf &&
             css`
               align-self: ${props.xl.alignSelf};
+            `}
+          ${props.xl.order &&
+            css`
+              order: ${props.xl.order};
             `}
         }`}
     `};
