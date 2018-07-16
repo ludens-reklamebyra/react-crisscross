@@ -5,12 +5,24 @@
 <h1 align="center">React Crisscross :triangular_ruler:</h1>
 <p align="center">A simple and flexible layout component for React based on CSS flexbox</p>
 
+## Installation
+
+<strong>With yarn</strong> </br>
+
+`yarn add react-crisscross`
+
+<strong>With npm</strong> </br>
+
+`npm install react-crisscross`
+
 ## Layout component
 
 ```jsx
+import Layout from 'react-crisscross';
+
 <Layout container>
   <Layout item>{/* Content */}</Layout>
-</Layout>
+</Layout>;
 ```
 
 ### Properties
@@ -49,6 +61,8 @@ Sometimes you want to override the default settings for the layout, such as medi
 module that can help you inject custom settings. Here's an example:
 
 ```jsx
+import Layout, { LayoutProvider } from 'react-crisscross';
+
 const mySettings = {
   mediaQueries: {
     lg: 1500
