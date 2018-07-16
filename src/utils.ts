@@ -1,9 +1,9 @@
-import { GridType, SettingsInterface } from './Interfaces';
+import { SettingsInterface } from './Interfaces';
 
-export function gridCalc(base: number, size: GridType): number {
+export function gridCalc(base: number, size: number): number {
   if (size < 1 || size > base) {
     throw new Error(
-      `The grid size is a number between 1-12. You defined "${size}".`
+      `The grid size is a number between 1-${base}. You defined "${size}".`
     );
   }
 

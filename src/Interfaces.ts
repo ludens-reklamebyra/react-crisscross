@@ -1,4 +1,37 @@
-type GridType = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+type DirectionType = 'row' | 'column' | 'row-reverse' | 'column-reverse';
+type JustifyType =
+  | 'flex-start'
+  | 'flex-end'
+  | 'center'
+  | 'space-between'
+  | 'space-around';
+type AlignItemsType =
+  | 'flex-start'
+  | 'flex-end'
+  | 'center'
+  | 'baseline'
+  | 'stretch';
+type WrapType = 'nowrap' | 'wrap' | 'wrap-reverse';
+type AlignSelfType =
+  | 'auto'
+  | 'flex-start'
+  | 'flex-end'
+  | 'center'
+  | 'baseline'
+  | 'stretch';
+
+type GridType = {
+  direction?: DirectionType;
+  justify?: JustifyType;
+  alignItems?: AlignItemsType;
+  wrap?: WrapType;
+  gap?: number;
+  flex?: string;
+  basis?: number;
+  grow?: number;
+  shrink?: number;
+  alignSelf?: AlignSelfType;
+};
 
 interface SettingsInterface {
   mediaQueries?: {
@@ -13,33 +46,22 @@ interface SettingsInterface {
 
 interface LayoutInterface {
   container?: boolean;
-  direction?: 'row' | 'column' | 'row-reverse' | 'column-reverse';
-  justify?:
-    | 'flex-start'
-    | 'flex-end'
-    | 'center'
-    | 'space-between'
-    | 'space-around';
-  alignItems?: 'flex-start' | 'flex-end' | 'center' | 'baseline' | 'stretch';
-  wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
-  gap?: number;
   item?: boolean;
   xs?: GridType;
   sm?: GridType;
   md?: GridType;
   lg?: GridType;
   xl?: GridType;
-  flex?: string;
-  grow?: number;
-  shrink?: number;
-  alignSelf?:
-    | 'auto'
-    | 'flex-start'
-    | 'flex-end'
-    | 'center'
-    | 'baseline'
-    | 'stretch';
   settings: SettingsInterface;
 }
 
-export { GridType, LayoutInterface, SettingsInterface };
+export {
+  DirectionType,
+  JustifyType,
+  AlignItemsType,
+  WrapType,
+  AlignSelfType,
+  GridType,
+  LayoutInterface,
+  SettingsInterface
+};

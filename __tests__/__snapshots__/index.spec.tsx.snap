@@ -2,41 +2,35 @@
 
 exports[`Layout Custom settings with layout provider 1`] = `
 .c0 {
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  margin-left: -16px;
-  margin-right: -16px;
-}
-
-.c0 > * {
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .c1 {
-  -webkit-flex-basis: 100%;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
   box-sizing: border-box;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-  align-self: auto;
+}
+
+@media only screen and (min-width:20px) {
+  .c0 {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  .c0 > * {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media only screen and (min-width:20px) {
+  .c1 {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
 }
 
 @media only screen and (min-width:480px) {
@@ -81,38 +75,27 @@ exports[`Layout Custom settings with layout provider 1`] = `
 
 exports[`Layout Simple two column layout 1`] = `
 .c0 {
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  margin-left: -16px;
-  margin-right: -16px;
-}
-
-.c0 > * {
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .c1 {
   box-sizing: border-box;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-  align-self: auto;
+}
+
+@media only screen and (min-width:0px) {
+  .c0 {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  .c0 > * {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 @media only screen and (min-width:1280px) {
@@ -141,31 +124,15 @@ exports[`Layout Simple two column layout 1`] = `
 
 exports[`Layout Simplest example of the Layout 1`] = `
 .c0 {
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
 }
 
 .c1 {
   box-sizing: border-box;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-  align-self: auto;
 }
 
 <div
