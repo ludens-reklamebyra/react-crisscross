@@ -31,15 +31,15 @@ import Layout from 'react-crisscross';
 
 You have accesss to all the same properties as in flexbox.
 
-### Media queries
+#### Media queries
 
-| Property | Value  | Description                                                               |
-| -------- | ------ | ------------------------------------------------------------------------- |
-| xs       | object | All container and item properties available. Uses on the `xs` media query |
-| sm       | object | All container and item properties available. Uses on the `sm` media query |
-| md       | object | All container and item properties available. Uses on the `md` media query |
-| lg       | object | All container and item properties available. Uses on the `lg` media query |
-| xl       | object | All container and item properties available. Uses on the `xl` media query |
+| Property | Value  | Description                                                  |
+| -------- | ------ | ------------------------------------------------------------ |
+| xs       | object | Use container and/or item properties on the `xs` media query |
+| sm       | object | Use container and/or item properties on the `sm` media query |
+| md       | object | Use container and/or item properties on the `md` media query |
+| lg       | object | Use container and/or item properties on the `lg` media query |
+| xl       | object | Use container and/or item properties on the `xl` media query |
 
 #### Container properties
 
