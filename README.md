@@ -59,6 +59,7 @@ You have accesss to all the same properties as in flexbox.
 | grow      | number                                                                                    | Same as the `flex-grow` property in flexbox.   |
 | shrink    | number                                                                                    | Same as the `flex-shrink` property in flexbox. |
 | alignSelf | `'auto'` _(default)_, `'flex-start'`, `'flex-end'`, `'center'`, `'baseline'`, `'stretch'` | Same as the `flex-grow` property in flexbox.   |
+| order     | number                                                                                    | Same as the `order` property in flexbox.       |
 
 ## Layout Provider
 
