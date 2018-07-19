@@ -9,6 +9,11 @@ const StyledLayout = styled.div<LayoutInterface>`
     props.container &&
     css`
       display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      align-content: stretch;
       ${props.xs &&
         css`@media only screen and (min-width: ${
           props.settings.mediaQueries.xs
@@ -24,6 +29,10 @@ const StyledLayout = styled.div<LayoutInterface>`
           ${props.xs.alignItems &&
             css`
               align-items: ${props.xs.alignItems};
+            `}
+          ${props.xs.alignContent &&
+            css`
+              align-content: ${props.xs.alignContent};
             `}
           ${props.xs.wrap &&
             css`
@@ -64,6 +73,10 @@ const StyledLayout = styled.div<LayoutInterface>`
             css`
               align-items: ${props.sm.alignItems};
             `}
+          ${props.sm.alignContent &&
+            css`
+              align-content: ${props.sm.alignContent};
+            `}
           ${props.sm.wrap &&
             css`
               flex-wrap: ${props.sm.wrap};
@@ -102,6 +115,10 @@ const StyledLayout = styled.div<LayoutInterface>`
           ${props.md.alignItems &&
             css`
               align-items: ${props.md.alignItems};
+            `}
+          ${props.md.alignContent &&
+            css`
+              align-content: ${props.md.alignContent};
             `}
           ${props.md.wrap &&
             css`
@@ -142,6 +159,10 @@ const StyledLayout = styled.div<LayoutInterface>`
             css`
               align-items: ${props.lg.alignItems};
             `}
+          ${props.lg.alignContent &&
+            css`
+              align-content: ${props.lg.alignContent};
+            `}
           ${props.lg.wrap &&
             css`
               flex-wrap: ${props.lg.wrap};
@@ -181,6 +202,10 @@ const StyledLayout = styled.div<LayoutInterface>`
             css`
               align-items: ${props.xl.alignItems};
             `}
+          ${props.xl.alignContent &&
+            css`
+              align-content: ${props.xl.alignContent};
+            `}
           ${props.xl.wrap &&
             css`
               flex-wrap: ${props.xl.wrap};
@@ -208,14 +233,15 @@ const StyledLayout = styled.div<LayoutInterface>`
   ${(props: LayoutInterface) =>
     props.item &&
     css`
+      order: 0;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: auto;
+      align-self: auto;
       ${props.xs &&
         css`@media only screen and (min-width: ${
           props.settings.mediaQueries.xs
         }px) {
-          ${props.xs.flex &&
-            css`
-              flex: ${props.xs.flex};
-            `}
           ${props.xs.basis &&
             css`
               flex-basis: ${gridCalc(props.settings.columns, props.xs.basis)}%;
@@ -241,10 +267,6 @@ const StyledLayout = styled.div<LayoutInterface>`
         css`@media only screen and (min-width: ${
           props.settings.mediaQueries.sm
         }px) {
-          ${props.sm.flex &&
-            css`
-              flex: ${props.sm.flex};
-            `}
           ${props.sm.basis &&
             css`
               flex-basis: ${gridCalc(props.settings.columns, props.sm.basis)}%;
@@ -270,10 +292,6 @@ const StyledLayout = styled.div<LayoutInterface>`
         css`@media only screen and (min-width: ${
           props.settings.mediaQueries.md
         }px) {
-          ${props.md.flex &&
-            css`
-              flex: ${props.md.flex};
-            `}
           ${props.md.basis &&
             css`
               flex-basis: ${gridCalc(props.settings.columns, props.md.basis)}%;
@@ -299,10 +317,6 @@ const StyledLayout = styled.div<LayoutInterface>`
         css`@media only screen and (min-width: ${
           props.settings.mediaQueries.lg
         }px) {
-          ${props.lg.flex &&
-            css`
-              flex: ${props.lg.flex};
-            `}
           ${props.lg.basis &&
             css`
               flex-basis: ${gridCalc(props.settings.columns, props.lg.basis)}%;
@@ -328,10 +342,6 @@ const StyledLayout = styled.div<LayoutInterface>`
         css`@media only screen and (min-width: ${
           props.settings.mediaQueries.xl
         }px) {
-          ${props.xl.flex &&
-            css`
-              flex: ${props.xl.flex};
-            `}
           ${props.xl.basis &&
             css`
               flex-basis: ${gridCalc(props.settings.columns, props.xl.basis)}%;

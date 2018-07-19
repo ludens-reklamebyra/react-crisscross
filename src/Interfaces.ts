@@ -4,13 +4,21 @@ type JustifyType =
   | 'flex-end'
   | 'center'
   | 'space-between'
-  | 'space-around';
+  | 'space-around'
+  | 'space-evenly';
 type AlignItemsType =
   | 'flex-start'
   | 'flex-end'
   | 'center'
   | 'baseline'
   | 'stretch';
+type AlignContentType =
+  | 'flex-start'
+  | 'flex-end'
+  | 'center'
+  | 'stretch'
+  | 'space-between'
+  | 'space-around';
 type WrapType = 'nowrap' | 'wrap' | 'wrap-reverse';
 type AlignSelfType =
   | 'auto'
@@ -24,9 +32,9 @@ type GridType = {
   direction?: DirectionType;
   justify?: JustifyType;
   alignItems?: AlignItemsType;
+  alignContent?: AlignContentType;
   wrap?: WrapType;
   gap?: number;
-  flex?: string;
   basis?: number;
   grow?: number;
   shrink?: number;
