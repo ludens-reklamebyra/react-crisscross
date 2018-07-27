@@ -8,7 +8,7 @@ This file contains information on how to contribute to the project. These are gu
 
 ### Reporting Bugs
 
-Follow these guidelines to make it easier for maintainers and the community to understand your report, reproduce the behavior, and find related reports.
+Follow these guidelines to make it easier for maintainers and the community to understand your report, reproduce the behavior, and find related reports. Use the [bug report template](https://github.com/ludens-reklamebyra/react-crisscross/issues/new?template=bug_report.md)
 
 Explain the problem and be as detailed as possible. You should include the following:
 
@@ -22,7 +22,7 @@ Explain the problem and be as detailed as possible. You should include the follo
 
 ### Suggesting Enhancements
 
-Follow these guidelines to make it easier for maintainers and the community to understand your suggestion, and find related suggestions.
+Follow these guidelines to make it easier for maintainers and the community to understand your suggestion, and find related suggestions. Use the [feature request template[(https://github.com/ludens-reklamebyra/react-crisscross/issues/new?template=feature_request.md)
 
 Explain the suggestion and be as detailed as possible. You should include the following:
 
