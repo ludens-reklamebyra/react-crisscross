@@ -56,6 +56,7 @@ interface SettingsInterface {
 interface LayoutInterface {
   container?: boolean;
   item?: boolean;
+  inline?: boolean;
   xs?: GridType;
   sm?: GridType;
   md?: GridType;
