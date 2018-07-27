@@ -22,7 +22,7 @@ Explain the problem and be as detailed as possible. You should include the follo
 
 ### Suggesting Enhancements
 
-Follow these guidelines to make it easier for maintainers and the community to understand your suggestion, and find related suggestions. Use the [feature request template[(https://github.com/ludens-reklamebyra/react-crisscross/issues/new?template=feature_request.md)
+Follow these guidelines to make it easier for maintainers and the community to understand your suggestion, and find related suggestions. Use the [feature request template](https://github.com/ludens-reklamebyra/react-crisscross/issues/new?template=feature_request.md)
 
 Explain the suggestion and be as detailed as possible. You should include the following:
 
