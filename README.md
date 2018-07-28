@@ -31,6 +31,14 @@ import Layout from 'react-crisscross';
 
 You have accesss to all the same properties as in flexbox.
 
+#### Base properties
+
+| Property  | Value   | Description                                                                        |
+| --------- | ------- | ---------------------------------------------------------------------------------- |
+| container | boolean | Makes the element a flex container, and allows all container properties to be used |
+| item      | boolean | Makes the element a flex item, and allows all item properties to be used           |
+| inline    | boolean | Make a flex container use `display: inline-flex`                                   |
+
 #### Media queries
 
 | Property | Value  | Description                                                  |

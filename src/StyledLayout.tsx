@@ -14,6 +14,10 @@ const StyledLayout = styled.div<LayoutInterface>`
       justify-content: flex-start;
       align-items: stretch;
       align-content: stretch;
+      ${props.inline &&
+        css`
+          display: inline-flex;
+        `}
       ${props.xs &&
         css`@media only screen and (min-width: ${
           props.settings.mediaQueries.xs
