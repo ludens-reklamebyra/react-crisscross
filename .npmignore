@@ -4,3 +4,4 @@ stories
 *.log
 .DS_Store
 __tests__
+.github
