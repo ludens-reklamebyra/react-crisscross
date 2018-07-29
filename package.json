@@ -51,6 +51,6 @@
     "precommit": "pretty-quick --staged && yarn build && yarn test",
     "storybook": "start-storybook -p 9003",
     "test": "jest",
-    "snapUp": "jest --updateSnapshot"
+    "test:update-snapshots": "jest --updateSnapshot"
   }
 }
