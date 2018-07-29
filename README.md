@@ -155,4 +155,4 @@ Formatting is automatically done using `Prettier`. It runs a new formatting on e
 
 ### Contributing
 
-Have a look at our [Contribution guidelines](./CONTRIBUTING.md).
+Have a look at our [contribution guidelines](./CONTRIBUTING.md).
