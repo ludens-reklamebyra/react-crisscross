@@ -110,3 +110,49 @@ const settings = {
   columns: 12
 };
 ```
+
+## Local development
+
+All the instructions to local development in React crisscross will use `Yarn` as package manager, but note
+that you can also use `npm` instead.
+
+### Install
+
+```
+$ git clone git@github.com:ludens-reklamebyra/react-crisscross.git
+$ cd react-crisscross
+$ yarn
+```
+
+### Storybook
+
+React crisscross uses storybook as a visual UI-test. To run the stories, use the command:
+
+```
+yarn storybook
+```
+
+### Unit tests
+
+React crisscross is tested with snapshots using `Jest`.
+Run the test suite using the command:
+
+```
+yarn test
+```
+
+#### Snapshots
+
+When you have to do breaking changes to React crisscross, the snapshots needs to be updated, or else they will fail the tests. You can do this by running the command:
+
+```
+yarn test:update-snapshots
+```
+
+### Formatting
+
+Formatting is automatically done using `Prettier`. It runs a new formatting on every commit, using a pre-commit hook.
+
+### Contributing
+
+Have a look at our [Contribution guidelines](./CONTRIBUTING.md).
