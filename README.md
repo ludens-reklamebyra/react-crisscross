@@ -114,7 +114,7 @@ const settings = {
 ## Local development
 
 All the instructions to local development in React crisscross will use `Yarn` as package manager, but note
-that you can also use `npm` instead.
+that you can use `npm` instead.
 
 ### Install
 
