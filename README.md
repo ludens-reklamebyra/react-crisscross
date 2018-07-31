@@ -12,25 +12,20 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Properties](#properties)
-
-* [Base properties](#base-properties)
-* [Media queries](#media-queries)
-* [Container properties](#container-properties)
-* [Item properties](#item-properties)
-
+  - [Base properties](#base-properties)
+  - [Media queries](#media-queries)
+  - [Container properties](#container-properties)
+  - [Item properties](#item-properties)
 - [Settings](#settings)
-
-* [Layout Provider](#layout-provider)
-* [Default settings](#default-settings)
-
+  - [Layout Provider](#layout-provider)
+  - [Default settings](#default-settings)
 - [Development](#development)
-
-* [Install](#install)
-* [Storybook](#storybook)
-* [Unit tests](#unit-tests)
-  - [Snapshots](#snapshots)
-* [Formatting](#formatting)
-* [Contributing](#contributing)
+  - [Install](#install)
+  - [Storybook](#storybook)
+  - [Unit tests](#unit-tests)
+    - [Snapshots](#snapshots)
+  - [Formatting](#formatting)
+  - [Contributing](#contributing)
 
 ## Installation
 
