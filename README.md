@@ -7,6 +7,31 @@
 <h1 align="center">React Crisscross :triangular_ruler:</h1>
 <p align="center">A simple and flexible layout component for React based on CSS flexbox</p>
 
+## Table of contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Properties](#properties)
+
+* [Base properties](#base-properties)
+* [Media queries](#media-queries)
+* [Container properties](#container-properties)
+* [Item properties](#item-properties)
+
+- [Settings](#settings)
+
+* [Layout Provider](#layout-provider)
+* [Default settings](#default-settings)
+
+- [Development](#development)
+
+* [Install](#install)
+* [Storybook](#storybook)
+* [Unit tests](#unit-tests)
+  - [Snapshots](#snapshots)
+* [Formatting](#formatting)
+* [Contributing](#contributing)
+
 ## Installation
 
 <strong>With yarn</strong> </br>
@@ -19,7 +44,7 @@
 
 ---
 
-## Layout component
+## Usage
 
 ```jsx
 import Layout from 'react-crisscross';
@@ -29,11 +54,13 @@ import Layout from 'react-crisscross';
 </Layout>;
 ```
 
-### Properties
+---
+
+## Properties
 
 You have accesss to all the same properties as in flexbox.
 
-#### Base properties
+### Base properties
 
 | Property  | Value   | Description                                                                        |
 | --------- | ------- | ---------------------------------------------------------------------------------- |
@@ -41,7 +68,7 @@ You have accesss to all the same properties as in flexbox.
 | item      | boolean | Makes the element a flex item, and allows all item properties to be used           |
 | inline    | boolean | Make a flex container use `display: inline-flex`                                   |
 
-#### Media queries
+### Media queries
 
 | Property | Value  | Description                                                  |
 | -------- | ------ | ------------------------------------------------------------ |
@@ -51,7 +78,7 @@ You have accesss to all the same properties as in flexbox.
 | lg       | object | Use container and/or item properties on the `lg` media query |
 | xl       | object | Use container and/or item properties on the `xl` media query |
 
-#### Container properties
+### Container properties
 
 | Property   | Value                                                                                     | Description                                        |
 | ---------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------- |
@@ -61,7 +88,7 @@ You have accesss to all the same properties as in flexbox.
 | wrap       | `'nowrap'` _(default)_, `'wrap'`, `'wrap-reverse'`                                        | Same as the `flex-wrap` property in flexbox.       |
 | gap        | number                                                                                    | Size of gap between each flex item.                |
 
-#### Item properties
+### Item properties
 
 | Property  | Value                                                                                     | Description                                    |
 | --------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------- |
@@ -71,10 +98,13 @@ You have accesss to all the same properties as in flexbox.
 | alignSelf | `'auto'` _(default)_, `'flex-start'`, `'flex-end'`, `'center'`, `'baseline'`, `'stretch'` | Same as the `flex-grow` property in flexbox.   |
 | order     | number                                                                                    | Same as the `order` property in flexbox.       |
 
-## Layout Provider
+---
 
-Sometimes you want to override the default settings for the layout, such as media queries. React Crisscross ships with a
-module that can help you inject custom settings. Here's an example:
+## Settings
+
+Sometimes you want to override the default settings for the layout, such as media queries. React Crisscross ships with a module that can help you inject custom settings.
+
+### Layout Provider
 
 ```jsx
 import Layout, { LayoutProvider } from 'react-crisscross';
@@ -94,7 +124,7 @@ const mySettings = {
 </LayoutProvider>
 ```
 
-#### Default settings
+### Default settings
 
 These settings can be overwritten by the `LayoutProvider`.
 
@@ -111,10 +141,11 @@ const settings = {
 };
 ```
 
-## Local development
+---
 
-All the instructions to local development in React crisscross will use `Yarn` as package manager, but note
-that you can use `npm` instead.
+## Development
+
+Although all instructions for development in React Crisscross use [yarn](https://yarnpkg.com/lang/en/) as package manager, [npm](https://www.npmjs.com/) can also be used.
 
 ### Install
 
@@ -139,6 +170,12 @@ Run the test suite using the command:
 
 ```
 yarn test
+```
+
+To run test suite in watch mode use:
+
+```
+yarn test:watch
 ```
 
 #### Snapshots
