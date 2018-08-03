@@ -31,18 +31,18 @@
 
 <strong>With yarn</strong> </br>
 
-`yarn add react-crisscross`
+`yarn add @ludens-reklame/react-crisscross`
 
 <strong>With npm</strong> </br>
 
-`npm install react-crisscross`
+`npm install @ludens-reklame/react-crisscross`
 
 ---
 
 ## Usage
 
 ```jsx
-import Layout from 'react-crisscross';
+import Layout from '@ludens-reklame/react-crisscross';
 
 <Layout container>
   <Layout item>{/* Content */}</Layout>
@@ -102,7 +102,7 @@ Sometimes you want to override the default settings for the layout, such as medi
 ### Layout Provider
 
 ```jsx
-import Layout, { LayoutProvider } from 'react-crisscross';
+import Layout, { LayoutProvider } from '@ludens-reklame/react-crisscross';
 
 const mySettings = {
   mediaQueries: {
