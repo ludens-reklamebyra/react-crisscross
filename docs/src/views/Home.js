@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
+import Hero from '../components/Hero';
 
 const Main = styled.div`
   position: relative;
@@ -20,8 +21,12 @@ export default class Home extends Component {
             content="Description of react-crisscross"
           />
         </Helmet>
+
         <Main>
-          <h1>This is home page</h1>
+          <Hero
+            title="React-crisscross"
+            subtitle="A flexible layout component for React based on CSS flexbox"
+          />
         </Main>
       </div>
     );
