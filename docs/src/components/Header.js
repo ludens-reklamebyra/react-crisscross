@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import docsData from '../utils/docsData';
 
 const StyledHeader = styled.header`
   height: 55px;
@@ -44,7 +43,7 @@ export default class Header extends Component {
         </Branding>
         <StyledMenu>
           <li>
-            <NavLink to={`/docs/${docsData[0].slug}`}>Docs</NavLink>
+            <NavLink to="/docs">Docs</NavLink>
           </li>
         </StyledMenu>
       </StyledHeader>

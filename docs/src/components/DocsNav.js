@@ -62,7 +62,7 @@ export default function DocsNav({ history }) {
                 activeClassName="active"
                 exact
                 active={isActive}
-                to={route.slug}
+                to={`/docs/${route.slug}`}
               >
                 {route.label}
               </StyledNavLink>
