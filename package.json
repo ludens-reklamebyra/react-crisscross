@@ -55,6 +55,8 @@
     "storybook": "start-storybook -p 9003",
     "test": "jest",
     "test:update-snapshots": "jest --updateSnapshot",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "website:dev": "cd docs && yarn start",
+    "website:build": "cd docs && yarn build"
   }
 }
