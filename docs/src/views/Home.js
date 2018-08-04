@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import styled from 'styled-components';
+
+const Main = styled.div`
+  position: relative;
+  top: 55px;
+`;
 
 export default class Home extends Component {
   render() {
@@ -15,7 +20,9 @@ export default class Home extends Component {
             content="Description of react-crisscross"
           />
         </Helmet>
-        <h1>This is home page</h1>
+        <Main>
+          <h1>This is home page</h1>
+        </Main>
       </div>
     );
   }

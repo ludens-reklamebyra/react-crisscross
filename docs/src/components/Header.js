@@ -11,6 +11,9 @@ const StyledHeader = styled.header`
   align-items: center;
   padding: 0 1.5rem;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
 `;
 
 const Branding = styled(({ ...props }) => <NavLink {...props} />)`

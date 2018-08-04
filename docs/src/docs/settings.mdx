@@ -1,0 +1,48 @@
+export const meta = {
+  slug: 'settings',
+  label: 'Settings',
+  metaTitle: 'Settings',
+  metaDescription: 'some description',
+  metaImage: '',
+}
+
+# Settings
+
+Sometimes you want to override the default settings for the layout, such as media queries. React Crisscross ships with a module that can help you inject custom settings.
+
+## Layout Provider
+
+```js
+import Layout, { LayoutProvider } from '@ludens-reklame/react-crisscross';
+
+const mySettings = {
+  mediaQueries: {
+    lg: 1500
+  }
+}
+
+<LayoutProvider settings={mySettings}>
+  <Layout container>
+    <Layout item>
+      {/* Content */}
+    </Layout>
+  </Layout>
+</LayoutProvider>
+```
+
+## Default settings
+
+These settings can be overwritten by the `LayoutProvider`.
+
+```js
+const settings = {
+  mediaQueries: {
+    xs: 0,
+    sm: 600,
+    md: 960,
+    lg: 1280,
+    xl: 1920
+  },
+  columns: 12
+};
+```

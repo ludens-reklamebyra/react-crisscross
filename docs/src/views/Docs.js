@@ -5,7 +5,7 @@ import DocsTemplate from './DocsTemplate';
 import DocsNav from '../components/DocsNav';
 
 const StyledDocs = styled.div`
-  margin: 0 0 0 250px;
+  margin: 45px 0 0 250px;
   padding: 1rem 2rem;
 `;
 
