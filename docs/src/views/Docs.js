@@ -13,7 +13,7 @@ export default class Docs extends Component {
   render() {
     return (
       <div>
-        <DocsNav />
+        <DocsNav history={this.props.history} />
         <StyledDocs>
           <Switch>
             <Route

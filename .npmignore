@@ -5,3 +5,4 @@ stories
 .DS_Store
 __tests__
 .github
+docs

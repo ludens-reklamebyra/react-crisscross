@@ -1,17 +1,34 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import docsData from '../utils/docsData';
 
 const StyledHeader = styled.header`
   height: 55px;
   width: 100%;
-  background-color: #222;
+  background-color: ${props => props.theme.seablue};
   display: flex;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
+  justify-content: space-between;
+`;
 
-  a {
-    color: #fff;
+const Branding = styled(({ ...props }) => <NavLink {...props} />)`
+  color: ${props => props.theme.lightGray};
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+`;
+
+const StyledMenu = styled.ul`
+  list-style: none;
+
+  li {
+    a {
+      color: ${props => props.theme.lightGray};
+      text-decoration: none;
+      position: relative;
+    }
   }
 `;
 
@@ -19,7 +36,14 @@ export default class Header extends Component {
   render() {
     return (
       <StyledHeader>
-        <Link to="/">React crisscross</Link>
+        <Branding exact to="/">
+          React-crisscross
+        </Branding>
+        <StyledMenu>
+          <li>
+            <NavLink to={`/docs/${docsData[0].slug}`}>Docs</NavLink>
+          </li>
+        </StyledMenu>
       </StyledHeader>
     );
   }

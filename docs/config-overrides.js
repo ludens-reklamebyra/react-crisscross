@@ -20,5 +20,6 @@ module.exports = (config, env) => {
 
     return rule;
   });
+
   return config;
 };

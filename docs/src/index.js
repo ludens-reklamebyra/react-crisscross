@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import 'prismjs';
+import 'prismjs/themes/prism.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import Prism from 'prismjs';
-import 'prismjs/themes/prism-tomorrow.css';
+import { ThemeProvider } from 'styled-components';
+import theme from './utils/theme';
 
-Prism.highlightAll();
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <ThemeProvider theme={theme}>
+    <App />
+  </ThemeProvider>,
+  document.getElementById('root')
+);
 registerServiceWorker();
