@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const StyledHero = styled.div`
@@ -7,7 +7,7 @@ const StyledHero = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: ${props => props.theme.cadetblue};
+  background-color: ${props => props.theme.dazzledBlue};
   flex-direction: column;
   color: ${props => props.theme.lightGray};
 

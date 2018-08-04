@@ -6,7 +6,7 @@ import docsData from '../utils/docsData';
 const StyledHeader = styled.header`
   height: 55px;
   width: 100%;
-  background-color: ${props => props.theme.seablue};
+  background-color: ${props => props.theme.imperialBlue};
   display: flex;
   align-items: center;
   padding: 0 1.5rem;
