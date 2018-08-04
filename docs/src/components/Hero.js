@@ -7,7 +7,7 @@ const StyledHero = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: ${props => props.theme.darkblue};
+  background-color: ${props => props.theme.cadetblue};
   flex-direction: column;
   color: ${props => props.theme.lightGray};
 
