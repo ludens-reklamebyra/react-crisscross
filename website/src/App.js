@@ -7,7 +7,7 @@ import Docs from './views/Docs';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Fragment>
           <Header />
           <Switch>
