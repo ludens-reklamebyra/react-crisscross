@@ -1,0 +1,31 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://ludens-reklamebyra.github.io/react-crisscross",
+  "dependencies": {
+    "@mdx-js/loader": "^0.15.0-2",
+    "@mdx-js/mdx": "^0.15.0-2",
+    "@rebass/markdown": "^1.0.0-1",
+    "gh-pages": "^1.2.0",
+    "prismjs": "^1.15.0",
+    "react": "^16.4.2",
+    "react-app-rewired": "^1.5.2",
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "styled-components": "^3.4.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "babel-plugin-prismjs": "^1.0.2"
+  }
+}
