@@ -33,3 +33,12 @@ table th {
   background-color: #003d5b;
   color: white;
 }
+
+.react-live {
+  box-sizing: border-box;
+}
+
+.react-live .prism-code {
+  overflow: scroll;
+  min-height: 500px;
+}

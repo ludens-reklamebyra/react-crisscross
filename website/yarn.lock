@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@ludens-reklame/react-crisscross@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@ludens-reklame/react-crisscross/-/react-crisscross-1.2.1.tgz#f8c135cec71a6e3b2974ec0e8640c0bfce35f9cf"
+
 "@mdx-js/loader@^0.15.0-2":
   version "0.15.0-2"
   resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-0.15.0-2.tgz#733e524ed8518a982e997eea687dc043816c836b"
@@ -54,6 +58,12 @@ acorn-dynamic-import@^2.0.0:
   dependencies:
     acorn "^4.0.3"
 
+acorn-dynamic-import@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/acorn-dynamic-import/-/acorn-dynamic-import-3.0.0.tgz#901ceee4c7faaef7e07ad2a47e890675da50a278"
+  dependencies:
+    acorn "^5.0.0"
+
 acorn-globals@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/acorn-globals/-/acorn-globals-3.1.0.tgz#fd8270f71fbb4996b004fa880ee5d46573a731bf"
@@ -66,6 +76,12 @@ acorn-jsx@^3.0.0:
   dependencies:
     acorn "^3.0.4"
 
+acorn-jsx@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-4.1.1.tgz#e8e41e48ea2fe0c896740610ab6a4ffd8add225e"
+  dependencies:
+    acorn "^5.0.3"
+
 acorn@^3.0.4:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-3.3.0.tgz#45e37fb39e8da3f25baee3ff5369e2bb5f22017a"
@@ -74,7 +90,7 @@ acorn@^4.0.3, acorn@^4.0.4:
   version "4.0.13"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.13.tgz#105495ae5361d697bd195c825192e1ad7f253787"
 
-acorn@^5.0.0, acorn@^5.5.0:
+acorn@^5.0.0, acorn@^5.0.3, acorn@^5.4.1, acorn@^5.5.0:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.1.tgz#f095829297706a7c9776958c0afc8930a9b9d9d8"
 
@@ -1252,6 +1268,19 @@ bser@^2.0.0:
   dependencies:
     node-int64 "^0.4.0"
 
+buble@^0.19.3:
+  version "0.19.3"
+  resolved "https://registry.yarnpkg.com/buble/-/buble-0.19.3.tgz#01e9412062cff1da6f20342b6ecd72e7bf699d02"
+  dependencies:
+    acorn "^5.4.1"
+    acorn-dynamic-import "^3.0.0"
+    acorn-jsx "^4.1.1"
+    chalk "^2.3.1"
+    magic-string "^0.22.4"
+    minimist "^1.2.0"
+    os-homedir "^1.0.1"
+    vlq "^1.0.0"
+
 buffer-from@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
@@ -1395,7 +1424,7 @@ chalk@1.1.3, chalk@^1.1.3:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
-chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.4.1:
+chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.1, chalk@^2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.1.tgz#18c49ab16a037b6eb0152cc83e3471338215b66e"
   dependencies:
@@ -1506,6 +1535,14 @@ cli-cursor@^2.1.0:
 cli-width@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
+
+clipboard@^1.5.5:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-1.7.1.tgz#360d6d6946e99a7a1fef395e42ba92b5e9b5a16b"
+  dependencies:
+    good-listener "^1.2.2"
+    select "^1.1.2"
+    tiny-emitter "^2.0.0"
 
 clipboard@^2.0.0:
   version "2.0.1"
@@ -1626,6 +1663,14 @@ component-emitter@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.2.1.tgz#137918d6d78283f7df7a6b7c5a63e140e69425e6"
 
+component-props@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/component-props/-/component-props-1.1.1.tgz#f9b7df9b9927b6e6d97c9bd272aa867670f34944"
+
+component-xor@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/component-xor/-/component-xor-0.0.4.tgz#c55d83ccc1b94cd5089a4e93fa7891c7263e59aa"
+
 compressible@~2.0.14:
   version "2.0.14"
   resolved "https://registry.yarnpkg.com/compressible/-/compressible-2.0.14.tgz#326c5f507fbb055f54116782b969a81b67a29da7"
@@ -1722,7 +1767,7 @@ core-js@^1.0.0:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
 
-core-js@^2.4.0, core-js@^2.5.0:
+core-js@^2.4.0, core-js@^2.4.1, core-js@^2.5.0:
   version "2.5.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.7.tgz#f972608ff0cead68b841a16a932d0b183791814e"
 
@@ -2151,6 +2196,13 @@ dom-converter@~0.1:
   resolved "https://registry.yarnpkg.com/dom-converter/-/dom-converter-0.1.4.tgz#a45ef5727b890c9bffe6d7c876e7b19cb0e17f3b"
   dependencies:
     utila "~0.3"
+
+dom-iterator@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/dom-iterator/-/dom-iterator-1.0.0.tgz#9c09899846ec41c2d257adc4d6015e4759ef05ad"
+  dependencies:
+    component-props "1.1.1"
+    component-xor "0.0.4"
 
 dom-serializer@0:
   version "0.1.0"
@@ -4498,6 +4550,12 @@ lru-cache@^4.0.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
+magic-string@^0.22.4:
+  version "0.22.5"
+  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.22.5.tgz#8e9cf5afddf44385c1da5bc2a6a0dbd10b03657e"
+  dependencies:
+    vlq "^0.2.2"
+
 make-dir@^1.0.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-1.3.0.tgz#79c1033b80515bd6d24ec9933e860ca75ee27f0c"
@@ -5621,6 +5679,12 @@ pretty-format@^20.0.3:
     ansi-regex "^2.1.1"
     ansi-styles "^3.0.0"
 
+prismjs@1.6:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.6.0.tgz#118d95fb7a66dba2272e343b345f5236659db365"
+  optionalDependencies:
+    clipboard "^1.5.5"
+
 prismjs@^1.15.0:
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.15.0.tgz#8801d332e472091ba8def94976c8877ad60398d9"
@@ -5655,7 +5719,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.0, prop-types@^15.6.1:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   dependencies:
@@ -5838,6 +5902,17 @@ react-helmet@^5.2.0:
 react-is@^16.3.1:
   version "16.4.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.4.2.tgz#84891b56c2b6d9efdee577cc83501dfc5ecead88"
+
+react-live@^1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/react-live/-/react-live-1.11.0.tgz#257b54abb64df250bc40b0572c21acd600ecdd5c"
+  dependencies:
+    buble "^0.19.3"
+    core-js "^2.4.1"
+    dom-iterator "^1.0.0"
+    prismjs "1.6"
+    prop-types "^15.5.8"
+    unescape "^0.2.0"
 
 react-router-dom@^4.3.1:
   version "4.3.1"
@@ -7076,6 +7151,10 @@ uglifyjs-webpack-plugin@^0.4.6:
     uglify-js "^2.8.29"
     webpack-sources "^1.0.1"
 
+unescape@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/unescape/-/unescape-0.2.0.tgz#b78b9b60c86f1629df181bf53eee3bc8d6367ddf"
+
 unherit@^1.0.4:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/unherit/-/unherit-1.1.1.tgz#132748da3e88eab767e08fabfbb89c5e9d28628c"
@@ -7332,6 +7411,14 @@ vfile@^2.0.0:
     replace-ext "1.0.0"
     unist-util-stringify-position "^1.0.0"
     vfile-message "^1.0.0"
+
+vlq@^0.2.2:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/vlq/-/vlq-0.2.3.tgz#8f3e4328cf63b1540c0d67e1b2778386f8975b26"
+
+vlq@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vlq/-/vlq-1.0.0.tgz#8101be90843422954c2b13eb27f2f3122bdcc806"
 
 vm-browserify@0.0.4:
   version "0.0.4"
