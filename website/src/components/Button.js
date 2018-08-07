@@ -2,7 +2,9 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
-const LinkButton = styled(({ ...props }) => <Link {...props} />)`
+const LinkButton = styled(({ light, transparent, ...props }) => (
+  <Link {...props} />
+))`
   font-size: 1rem;
   border: 0;
   display: inline-block;
